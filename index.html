@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Image Gallery</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+
+  <h1 class="animated-title">✨ My Image Gallery ✨</h1>
+
+  <!-- Filter Buttons -->
+  <div class="filters">
+    <button onclick="filterImages('all')">All</button>
+    <button onclick="filterImages('nature')">Nature</button>
+    <button onclick="filterImages('animals')">Animals</button>
+    <button onclick="filterImages('city')">City</button>
+  </div>
+
+  <!-- Gallery -->
+  <div class="gallery">
+    <div class="image nature"><img src="image 1.jpg" alt="Nature 1"></div>
+    <div class="image animals"><img src="image 2.jpg" alt="Animal 1"></div>
+    <div class="image city"><img src="https://picsum.photos/id/1043/400/300" alt="City 1"></div>
+    <div class="image nature"><img src="image 5.jpg" alt="Nature 2"></div>
+    <div class="image animals"><img src="https://picsum.photos/id/1062/400/300" alt="Animal 2"></div>
+    <div class="image city"><img src="image 6.jpg" alt="City 2"></div>
+  <div class="image city"><img src="image3.jpg" alt="City 2"></div>
+  </div>
+
+  <!-- Lightbox -->
+  <div id="lightbox" class="lightbox">
+    <span class="close" onclick="closeLightbox()">&times;</span>
+    <img id="lightbox-img" class="lightbox-img" src="" alt="">
+    <div class="nav">
+      <span onclick="prevImage()">&#10094;</span>
+      <span onclick="nextImage()">&#10095;</span>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
